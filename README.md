@@ -5,14 +5,15 @@ https://flask.palletsprojects.com/en/2.2.x/patterns/appfactories/
 */
 
 To create the database:
-
->> python
+```python
 >> from app import db, create_app
 >> db.create_all(app=create_app('default'))
+```
 
 To run the app:
 
+```python
 >> set FLASK_APP=flask_app.py
 >> set FLASK_DEBUG=1
 >> flask run
-
+```
